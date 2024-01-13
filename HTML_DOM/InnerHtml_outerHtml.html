@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Học lập trình Javascript</title>
+</head>
+
+<body>
+    <div class="box"></div>
+    <!-- Test lấy ra nội dung bên trong thẻ (atribute node và text node) -->
+    <div class="box2">
+        <p>Hello</p>
+        <a href="">Các bạn nhé</a>
+    </div>
+    <!-- Test outer html -->
+    <div class="divOuter">
+        <h1 id = "h1Outer">Đây là nội dung bên trong div Outer</h1>
+    </div>
+    <script>
+        //Thêm 1 element vào bên trong một element (thuộc tính của element node)
+        /* 
+            * Thêm được cả atribute node và text node
+        */
+        //Inner: lấy ra cả tribute và text node mà nó chứa (trừ nó )
+        var boxElement = document.querySelector('.box');
+        boxElement.innerHTML = '<h1>Đây là thẻ h1</h1>';
+        console.log(document.querySelector('h1').innerText);
+        console.log('=======================');
+        //Thêm atribute node vào box2
+        var box2Element = document.querySelector('.box2');
+        box2Element.innerHTML = '<a>Đây là thẻ được thêm từ JS </a>';
+        console.log(box2Element.innerHTML);
+        console.log('=======================');
+        //Outer html (lấy chính bản thân nó)
+        var outerElement = document.querySelector('#h1Outer');
+        console.log(outerElement.outerHTML);
+        outerElement.outerHTML = '<span>Đã bị ghi đè</span>';//Ghi đè chính nó luôn
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Học lập trình Javascript</title>
+    <style>
+        button {
+            outline: none;
+            background-color: transparent;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HTML DOM</h1>
+
+    <div class="box1">
+        <ul>
+            <li>Javascript</li>
+            <li>PHP</li>
+        </ul>
+    </div>
+    <div class="box2">ư
+        <ul>
+            <li>Javascript</li>
+            <li>PHP</li>
+        </ul>
+    </div>
+
+    <form action="" id = "form1">
+
+    </form>
+    <script>
+        var result = document.querySelectorAll("ul");
+        console.log(result[0]);
+
+        console.log(document.forms[0]); //HTML colection
+        //Vị trị thực thi của file js
+        document.write("Hello có bạn"); //Do file JS nằm cuối nên dòng này cũng sẽ nằm cuối
+    </script>
+</body>
+
+</html>

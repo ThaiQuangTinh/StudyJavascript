@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Developer</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: palevioletred;
+            border: 2px solid red;
+            background-clip: content-box;
+        }
+
+        .box::after {
+            content: "Hello hello";
+            display: block;
+            width: 150px;
+            height: 50px;
+            border: 1px solid blue;
+            background-color: #fff;
+        }
+
+        /*Tạo hiệu ứng cho kí tự đầu tiên*/
+        h1::first-letter {
+            font-size: 50px;
+            color: #ff0000;
+        }
+
+        /*CSS cho dòng đầu tiên*/
+        h1::first-line {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        /*Hiệu ứng khi được chọn*/
+        ul > li::selection {
+            background-color: pink;
+            color: blue;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h5>11</h5>
+    </div>
+    <h1>CSS pesudo-elements <br />CSS pesudo-elements2</h1>
+    <ul>
+        <li>::before</li>
+        <li>::after</li>
+        <li>::first-letter</li>
+        <li>::fist-line</li>
+        <li>::selection</li>
+    </ul>
+    <button>Submit</button>
+</body>
+
+</html>

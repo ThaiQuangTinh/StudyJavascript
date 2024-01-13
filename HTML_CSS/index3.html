@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn web programing</title>
+    <style>
+        .image {
+            width: 100%;
+            height: 1000vh;
+            background-image: url(https://vapa.vn/wp-content/uploads/2022/12/anh-3d-thien-nhien.jpeg);
+            background-repeat: no-repeat;
+            background-size: 300px;
+            /*Cover: lấy chiều dài hơn làm 100%, chấp nhận che khuất bức ảnh (ngược lại với contain)*/
+            box-sizing: border-box;
+            background-position: top 20px right 40px;
+            /*Xác định vị trí*/
+            /*background-origin: padding-box; Xác định lớp cần đổ ứng với background image*/
+            /*background: url() no-repeat center/contain; */
+        }
+
+        .box {
+            width: calc(80% + 20%);
+            height: 100px;
+            background-color: rgb(255, 255, 23);
+            color: black;
+        }
+
+        .box::after {
+            content: attr(data-title);
+        }
+
+        a::after {
+            content: "(" attr(href)")";
+        }
+    </style>
+</head>
+
+<body>
+    <div class="image"> </div>
+    <div class="box" title="Đây là box màu vàng"></div>
+    <a href="https://fullstack.edu.vn">Học lập trình</a>
+</body>
+
+</html>

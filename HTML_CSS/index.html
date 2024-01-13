@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Học lập trình JavaScripts</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        :root {
+            --textColor: blue;
+            --boxSize: 50px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .boxff {
+            width: 100vw;
+            height: 100px;
+            background-color: #FF00FF;
+            border: 10px dashed #FF0000;    
+            box-sizing: border-box;
+            background-clip: padding-box; /*Xác định phần cần đổ*/
+        }
+
+        .box {
+            width: auto;
+            height: auto;
+            box-sizing: border-box;
+            border: 2px solid #FF0000;
+        }
+
+        .box1 {
+            background-color: yellowgreen;
+            margin: auto;
+            padding: 10px;
+            background-clip: content-box;
+        }
+
+        .box2 {
+            background-color: blue;
+            margin: auto;
+        }
+
+        .image {
+            width: 100px;
+            height: 100px;
+            background-image: url(https://vapa.vn/wp-content/uploads/2022/12/anh-3d-thien-nhien-004.jpg);
+            background-size: 200px;
+            background-repeat :repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">Box 1</div>
+    <div class="box box2">Box 2</div>
+    <div class="image"></div>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: auto;
+    height: auto;
+    font-size: 10px;
+    border-left: 3px solid #ff0422;
+    background-color: #a59191;
+    position: relative;
+    top: 0px;
+    right: 0px;
+}

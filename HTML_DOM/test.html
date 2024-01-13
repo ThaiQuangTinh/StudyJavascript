@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul class="courses-list">
+
+    </ul>
+    <script>
+        var courses = ['HTML & CSS', 'Javascript', 'PHP', 'Java']
+
+        function render(courses) {
+            const newCoures = courses.map(function (currentValue) {
+                return `<li>${currentValue}</li>`;
+            });
+            var ulHtml = newCoures.join('');
+            console.log(ulHtml);
+            var ulElement = document.querySelector('.courses-list');
+            ulElement.innerHTML = ulHtml;
+        }
+
+        render(courses);
+    </script>
+</body>
+
+</html>
